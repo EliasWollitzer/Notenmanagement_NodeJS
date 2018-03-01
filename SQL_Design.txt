@@ -1,0 +1,48 @@
+/*
+ create table Ergebnis(
+Eid INT NOT NULL auto_increment,
+Pid INT NOT NULL,
+Tid INT NOT NULL,
+primary key (Eid,Pid,Tid),
+Note VARCHAR(30),
+gefehlt bit,
+anmerkung VARCHAR(50)
+); 
+create table Klasse(
+Pid INT NOT NULL auto_increment,
+primary key (Pid),
+firstName VARCHAR(30),
+lastName VARCHAR(30)
+);
+ create table Tests(
+Tid INT NOT NULL auto_increment,
+primary key (Tid),
+Datum date,
+Thema VARCHAR(40),
+Art VARCHAR(40)
+);
+
+insert into Klasse
+ (firstName,lastName)
+ values
+ ('Elias','wollitzer'),
+ ('Arastu','Moatazedy'),
+ ('Wolfgang','Schwendtbauer'),
+ ('Leon','Stempfer'),
+ ('Florian','Schachermair'),
+ ('Simon','Angleitner'),
+ ('Mathias','Asamer'),
+ ('Philipp','Weisz'),
+ ('Matthias','Weingartner');
+
+
+insert into Tests
+ (Datum,Thema,Art)
+ values
+ ('2017-12-12','SQL','Test'),
+ ('2017-12-15','Java','SMUEP'),
+ ('2017-11-12','Arrays','MUEP'),
+ ('2017-02-12','BieneMaja','Test');
+ */
+
+ SELECT * FROM Tests;
